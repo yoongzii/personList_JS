@@ -1,0 +1,26 @@
+body{
+   background: lightgoldenrodyellow;
+   font-size: 18px;
+   font-family: 'Pretendard', sans-serif;
+}
+button{
+   margin: 0; padding: 0; line-height: 1em; font: inherit;
+   background: none; border: none;
+   cursor: pointer;
+}
+
+#wrap{
+   width: 800px; height: 800px;
+   margin: 50px auto 50px; box-sizing: border-box;
+   background: #fff; font: inherit;
+   border: 3px solid rgb(33, 117, 37);
+   box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+   border-radius: 20px;
+   text-align: center;
+}
+
+h1{font-size: 30px; font-weight: bold; padding: 30px;}
+
+#personList li{
+   font-size: 18px; padding-top: 10px;
+}
