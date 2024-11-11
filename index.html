@@ -10,37 +10,101 @@
    <link rel="stylesheet" href="./personList.css">
    <!-- JS -->
 
-   <script src="./js/personList.js" defer></script>
+   <script src="./personList.js" defer></script>
 </head>
 <body>
-   <!--
-   1. 이름과 연락처를 입력 받음
-   2. 기본 리스트로 나열
-   3. 그룹 (select 태그, 가족/친구/직장)으로 분류
-   4. 분류된 항목은 각각의 리스트로 변경(예: 완료목록)
-   5. 모든 항목에서 삭제 버튼 추가 기능
 
-   //*** 음식점, 상풍명, 가격, 분류(중식, 일식, 한식, 분식, 기타)
-   //
+   <section id="one_page">
+      <div class="inner">
+         <div class="onepage_top">
+            <h1>연락처 저장</h1>
+         </div>
+         <div class="onepage_bottom">
+            <div class="left_phone">
+               <img class="phone_bg" src="./img/phone.png" alt="phone">
+               <div class="phone_cont">
+                  <div class="phone_wrap">
+                     <strong>연락처</strong>
+                     <img class="person_img" src="./img/ellipse_person.png" alt="person">
+                     <p class="phone_name"> 이름을 입력하세요</p>
+                     <p> 010-XXXX-XXXX</p>
+                  </div>
+                  <div class="lie_btn">저장하기</div>
+               </div>
+            </div>
 
-   -->
+            <div class="explan">
+               <strong>사용방법</strong>
 
-   <div id="wrap">
-      <h1>회원 정보 리스트</h1>
-      <form id="personForm">
-         이름: <input type="text" id="personName" placeholder="이름을 입력하세요" required>
-         연락처: <input type="text" id="personNumber" placeholder="연락처를 입력하세요" required>
-         <button><i class="ri-mail-send-line"></i></button>
-      </form>
-      <ul id="personList"></ul>
+               <ul>
+                  <li>1. 설명글 아래에 ‘적용하기’ 버튼 누르면, 연락처를 저장 할 수 있습니다.</li>
+                  <li>2. 왼쪽 ‘연락처 입력’ 보드에 이름과 연락처를 입력하세요. </li>
+                  <li>3. ‘저장하기’ 버튼을 누르세요 </li>
+                  <li>4. ‘연락처 목록’에 입력하신 정보가 저장됩니다.</li>
+                  <li>5. 입력하신 정보 옆에 ‘기타’를 누르시면, 연락처가 분류가 됩니다.
+                     <p>(※ 기본으로 기타로 저장됩니다.)</p>
+                  </li>
+                  <li>6. 정보를 삭제를 원하는 경우에는 휴지통 아이콘을 누르면 ‘삭제’가 됩니다.</li>
+               </ul>
 
-      <h2 class="groupName"></h2>
-      <ul id="familyCon"></ul>
-      <h2 class="groupName"></h2>
-      <ul id="frenidCon"></ul>
-      <h2 class="groupName"></h2>
-      <ul id="workCon"></ul>
-   </div>
+               <div class="play">
+                  <button>적용하기</button>
+               </div>
+            </div>
+         </div>
+
+      </div>
+   </section>
+
+
+   <section id="wrap">
+      <div class="inner">
+         <div class="wrap_cont">
+            <div class="left">
+               <h1>연락처 입력</h1>
+               <div class="box_design input_box">
+                  <form id="input_wrap">
+                     이름 <input id="input_name" type="text" placeholder="이름 입력" required>
+                     연락처 <input id="input_tel" type="tel" placeholder="전화번호 입력">
+                     <button type="submit">저장하기<i class="ri-send-plane-line"></i></button>
+                  </form>
+               </div>
+            </div>
+
+            <div class="box_design memberlist">
+
+               <h2>연락처 목록</h2>
+
+               <div class="member_wrap">
+                  <h3 class="group_wrap"></h3>
+                  <ul class="addlist"></ul>
+               </div>
+
+               <div class="member_wrap">
+                  <h3 class="group_wrap"></h3>
+                  <ul class="family_list"></ul>
+               </div>
+
+               <div class="member_wrap">
+                  <h3 class="group_wrap"></h3>
+                  <ul class="friend_list"></ul>
+               </div>
+
+               <div class="member_wrap">
+                  <h3 class="group_wrap"> </h3>
+                  <ul class="coworker_list"></ul>
+               </div>
+
+            </div>
+         </div>
+
+
+            <button class="prev_btn"><i class="ri-arrow-left-s-fill"></i>이전</button>
+
+      </div>
+
+</section>
+
 
 
 </body>
